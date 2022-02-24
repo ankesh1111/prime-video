@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primebody</title>
+
+    <style>
+        #container{
+           width: 97%;
+           height: 450px;
+           background-color: black;
+           color: #fff;
+           padding: 25.45px;
+           margin: auto;
+          
+        }
+        .H1 {
+           font-size:55px;
+           font-style: normal;
+           margin-left: 20px;
+           font-family: sanchex;
+           margin-bottom: 10px;
+          
+        }
+        .P{
+          font-size: 28px;
+          width: 780px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          margin-left: 20px;
+          font-family: sanchex;
+          
+        }
+        img{
+            width: 670px;
+            height: 390.64px;
+           margin-left: 795px;
+           margin-top: -300px;
+        }
+        #Started{
+            background-image: linear-gradient(to top,#0F79AF,#0F79AF);
+            width: 300px;
+            height: 64.1px;
+            font-size: 30px;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+            border-radius: 5px;
+            margin-left: 20px;
+        
+        }
+    </style>
+</head>
+<body>
+   <div id="container">
+    <p class="H1">One membership, many benefits</p>
+    <p class="P">Your Prime membership now also includes ad-free music along with unlimited free,fast delivery on eligible items, exclusive access to deals & more.</p>  
+    <button id="Started" class="Started">Get Started</button>
+    <img src="prime.png" alt="PRIME_img">
+   
+</body>
+</html>
+<script>
+    document.querySelector("#Started").addEventListener("click",signin)
+    function signin(){
+        location.href="signin.html"
+    }
+</script>
