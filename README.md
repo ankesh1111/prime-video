@@ -27,4 +27,5 @@ Inc., offered as a standalone service or as part of Amazon's Prime subscription.
 6. Payment Confirm page
  ![image 6](https://user-images.githubusercontent.com/92791586/155705568-dd20fd3e-6cfd-496b-850c-744f0df4c7fa.PNG)
 7. video main page page
-8. 
+![image 7](https://user-images.githubusercontent.com/92791586/155747005-500c4cd9-c175-40de-9f26-b9e610628daf.PNG)
+
