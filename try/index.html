@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .header {
+            /* to fix the header starts */
+            /* position: fixed; */
+            width: 101.3%;
+            /* to fix the header ends */
+
+            display: flex;
+            justify-content: space-between;
+            height: 74px;
+            background-color: #1a242f;
+
+            /* to make the header covers the whole width of the screen starts*/
+            margin-top: -9px;
+            margin-left: -9px;
+            margin-right: -8px;
+            /* to make the header covers the whole width of the screen ends*/
+
+            padding: 16px 48px;
+            box-sizing: border-box;
+            align-items: center;
+        }
+        .logo {
+            height: 52px;
+            /* need to find a proper reason for this margin left */
+            margin-left: -8px;
+        }
+        .rightSideItems {
+            display: flex;
+        }
+        .globeIcon, .langSelect {
+            margin-right: 5px;
+        }
+        .globeIcon {
+            /* padding is used to stop the vertical shrink of globe icon */
+            padding-top: 1px;
+        }
+        .langSelect, .signIn {
+            color: #c3bfc6;
+            font-size: 17px;
+            /* to improve preciseness */
+            margin-top: 4px;
+        }
+        .dropDownTriangleIcon {
+            /* margin top is here to b/c dropDown img is quite high */
+            margin-top: 8px;
+            height: 12px;
+            width: 13px;
+        }
+        .signIn {
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        
+        .navbar {
+            overflow: hidden;
+            /* width: 100%; */
+            background-color:black;
+            /* margin: 0;
+            padding: 0; */
+            margin-top: -9px;
+            margin-left: -9px;
+            margin-right: -8px;
+            /* to make the header covers the whole width of the screen ends*/
+
+            padding: 16px 48px;
+            box-sizing: border-box;
+            align-items: center;
+            width: 100%;
+        } 
+
+        .s{
+            
+            width:100%;
+            margin: 0;
+            padding: 0;
+            /* height:100%; */
+         }
+
+        .k{
+            color: #fff;
+            font-size:45px;
+            margin-top:-460px;
+            margin-left:40px;
+            margin-bottom:20px;
+        }
+
+        .t{
+            color:#fff;
+            font-size: 25px;
+            margin-top: 20px;
+            margin-left: 40px;
+            font-family: sanchez;
+        }
+
+        #button{
+            margin-left: 3%;
+            background-color: rgb(14,121,175);
+            border-style: none;
+            font-size: 16px;
+            width:280px;
+            height: 50px;
+            color: white;
+            border-radius: 3px;
+            margin-bottom: 1%;
+        }
+            
+        .p1{
+            font-size: 15px;
+            color:white;
+            margin-left: 6.5%;
+            margin-top: 0px;
+            /* margin-top:10px; */
+        }
+        .p6{
+           margin-top: 150px;
+        }
+
+        /* 2nd body */
+
+        .main{
+        display: flex;
+        /* width: 100%; */
+        /* height: 500px; */
+        justify-content: space-evenly;
+        
+    }
+    .content{
+        height: 500px;
+        width: 550px;
+        /* margin-right:40px; */
+        /* margin: 0; */
+        
+    }
+    .h1{
+        font-size: 45px;
+        color: #000;
+        font-family:sans-serif ;
+        /* margin-left: 10px; */
+    }
+
+    .h2{
+        font-family:sans-serif;
+        font-size: 25px;
+        text-align: justify;
+    }
+    .container{
+        display: grid;
+        column-gap: 25px;
+        grid-template-columns: repeat(3,160px);
+        grid-template-rows: repeat(3,80px);
+        row-gap: 65px;
+        margin-right: 10px;
+        margin-top: 30px;
+        /* margin: 10px; */
+      
+    }
+    .container>div{
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        /* gap: 2px; */
+       }
+
+       /* 3rd body */
+
+       #container{
+           /* width: 80%; */
+           height: 505px;
+           background-color: black;
+           color: #fff;
+           padding: 25.45px ;
+           /* margin: auto; */
+           margin-top: -9px;
+            margin-left: -9px;
+            margin-right: -8px;
+            /* to make the header covers the whole width of the screen ends*/
+
+            padding: 16px 48px;
+            box-sizing: border-box;
+            align-items: center;
+        }
+        .h3 {
+           font-size:40px;
+           font-style: normal;
+           margin-left: 30px;
+           margin: 20px;
+        }
+        .P{
+          font-size: 28px;
+          width: 780px;
+          /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+          margin-left: 20px;
+          font-family: sanchex;
+        }
+        .i1{
+            width: 642.4px;
+            height: 555.64px;
+           margin-left: 800px;
+           margin-bottom: 100px;
+           margin-top: -285px;
+        }
+        #Started{
+            background-image: linear-gradient(to top,#0F79AF,#0F79AF);
+            width: 250px;
+            height: 50px;
+            font-size: 17px;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+            border-style: none;
+            border-radius: 3px;
+            margin-left: 20px;
+        }
+        /* 4th body */
+
+        #main{
+        /* width:100%; */
+        height:500px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        /* margin: auto; */
+        align-items: center;
+        background-color: rgb(0,0,0);
+        margin-top: -9px;
+            margin-left: -9px;
+            margin-right: -8px;
+            /* to make the header covers the whole width of the screen ends*/
+
+            padding: 16px 48px;
+            box-sizing: border-box;
+            align-items: center;
+    }
+    .child1{
+        width: 50%;
+        height:90%;
+        
+        /* border: 1px solid rosybrown; */
+    }
+    .child2{
+        width:40%;
+        height:90%;
+        /* border: 1px solid rosybrown; */
+    }
+    .h4{
+        color: rgb(255,255,255);
+        font-size: 40px;
+        margin: 0px;
+        margin-bottom: -60px;
+        padding: 30px;
+        font-family:Georgia, 'Times New Roman', Times, serif
+    }
+    .p3{
+        color:rgb(255,255,255);
+        margin-bottom: -10px;
+        padding: 30px;
+        text-align:justify;
+        font-size: 21px;
+    }
+    .button2{
+       text-align: center;
+       font-size: 17px;
+       color:rgb(255,255,255);
+       background-color: rgb(14,121,175);
+       margin:30px;
+       border-radius: 3px;
+       border-style: hidden;
+       width:250px;
+       height:50px;
+    }
+
+    /* 5th body */
+
+    #container1
+    {height:400px;display: flex;
+        background-color: black;
+        margin-top: -9px;
+            margin-left: -9px;
+            margin-right: -8px;
+            /* to make the header covers the whole width of the screen ends*/
+
+            padding: 16px 48px;
+            box-sizing: border-box;
+            align-items: center;}
+    #submit{color:white;background-color: rgb(14,121,175);margin-left:70px;width:250px;height:50px;border-radius: 3px;font-size: 17px;border-style: none;}
+    .inner{width:50%;height:400px;box-sizing: border-box;}
+    .h5{ padding:10px;margin-right:20px;margin-left:60px;font-size: 40px;font-family: Amazon Ember,Amazon Arabic Ember,Arial;color:white;text-align: justify;}
+    .p4{ padding:10px;margin-right:90px;margin-left:60px;margin-top:-20px;font-size: 21px;font-family:Amazon Arabic Ember,sans-serif;color:rgb(241,233,234);text-align: justify;font-weight: 0px;}
+    /* img{width:99.9%;height:397.6px} */
+    .img{
+        margin-top: 0px;
+        margin-left: 20px;
+        /* height: 300px;
+        width:500px */
+    }
+
+    /* footer */
+
+    .footer {
+            height: 137px;
+            background-color: #212121;
+
+            /* to make the header covers the whole width of the screen starts*/
+            margin-bottom: -9px;
+            margin-left: -9px;
+            margin-right: -8px;
+            /* to make the header covers the whole width of the screen ends*/
+
+            padding-top: 24px;
+            box-sizing: border-box;
+        }
+        .footerLogo {
+            display: block;
+            margin: auto;
+        }
+        .footerLinksAndText {
+            display: block;
+            text-align: center;
+            font-size: 15px;
+        }
+        .footerLinksAndText > a {
+            color: #155c85;
+            /* to remove underline behavior of anchor tag */
+            text-decoration: none;
+            margin-right: 4px;
+        }
+        .footerLinksAndText > span {
+            color: #828082;
+        }
+        .thirdBody {
+            display: flex;
+            height: 500px;
+            width: 101.2%;
+            margin-left: -8px;
+            color: white;
+            background-color: #000;
+            margin-right: -9px;
+        }
+        .h3 {
+           font-size:40px;
+           font-style: normal;
+           margin-left: 30px;
+           margin: 20px;
+        }
+        .P{
+          font-size: 28px;
+          width: 780px;
+          /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+          margin-left: 20px;
+          font-family: sanchex;
+        }
+        #Started{
+            background-image: linear-gradient(to top,#0F79AF,#0F79AF);
+            width: 250px;
+            height: 50px;
+            font-size: 17px;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+            border-style: none;
+            border-radius: 3px;
+            margin-left: 20px;
+        }
+        .firstBody {
+            height: 500px;
+            width: 101.2%;
+            margin-left: -8px;
+            background-image: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg");
+        }
+        .divisionInsideFirstBody {
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 70px;
+            height: auto;
+            width: 550px;
+            
+            color: white;
+        }
+        .divisionInsideFirstBody > button {
+            width: 280px;
+            height: 50px;
+            font-size: 17px;
+            background-color: #0f79af;
+            border: transparent;
+            border-radius: 3px;
+            color: white;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header starts -->
+    <div class="header">
+        <img class="logo" src="primeVideoLogo.jpg" alt="prime_video_logo" />
+        <div class="rightSideItems">
+            <img src="globeIcon.jpg" alt="globe_icon" class="globeIcon">
+            <span class="langSelect">EN</span>
+            <img class="dropDownTriangleIcon" src="dropDownTriangleArrow.jpg" alt="drop_down_triangle_arrow" />
+            <a href="signIn.html" class="signIn">Sign In</a>
+        </div>
+    </div>
+
+    <!-- 1st body -->
+
+    <div class="firstBody">
+        <div class="divisionInsideFirstBody">
+            <h1 style="font-size: 40px;">Welcome to Prime Video</h1>
+            <p style="font-size: 22px;">Join Prime to watch the latest movies, TV shows and award-winning Amazon Originals</p>
+            <button onclick="signIn()">Start your 30-day free trial</button>
+            <p style="margin-left: 28px; font-size: 15px;">With select credit or debit cards</p>
+            
+        </div>
+
+    </div>
+
+    <!-- 2nd body -->
+
+    <div class="main">
+        <div class="content">
+            <h1 class="h1">Your favorite channels all in one place </h1>
+            <p class="h2">With Prime Video Channels, find shows and movies from your favorite channels all in one place. Enjoy with an add-on subscription to Channels of your choice
+         </p>
+        </div>
+        <div class="container">
+            <div class="a">
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=lionsgateplayin">
+                <img 
+                
+                style="height:140px; width:180px;"
+                src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/LionsgatePlay-426X2946_V1.jpg">
+                </a></div>
+            <div class="b">
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=discoveryplusin">
+                <img 
+                style="height:140px; width:180px;"
+                src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Discovery.jpg ">
+           </a> </div>
+            <div class="c">
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=erosnowin">
+                <img 
+                style="height:140px; width:180px;"
+                src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Erosnow-426X2948_V1.jpg">
+            </a></div>
+            <div class="d">
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=hoichoiin">
+              <img 
+              style="height:140px; width:180px;"
+              src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/hoichoi-426X2946_V1.jpg">
+            </a> </div>
+            <div class="e">
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=docubayin">
+                <img 
+                style="height:140px; width:180px;"
+                src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Docubay-426X2947_V1.jpg"">
+            </a> </div>
+            <div class="f">
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=shortstvin">
+                <img 
+                style="height:140px; width:180px;"
+                src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/ShortsTV-426X2944_V1.jpg">
+            </a> </div>
+            <div class="g">
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=mubiin">
+                <img 
+                style="height:140px; width:180px;"
+                src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Mubi-426X2946_V1.jpg">
+            </a> </div>
+            <div class="h">
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=manoramamaxin">
+                <img 
+                
+                style="height:140px; width:180px;"
+                src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_MANORAMAMAX.jpg">
+            </a> </div>
+            <div class="i">
+                <a href="https://www.primevideo.com/gp/video/offers/ref=dvm_MLP_IN_3P_hayuin?benefitId=hayuin">
+                  
+                <img 
+                style="height:140px; width:180px;"
+                src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/Hayu_logo_for_MLP_Grid.jpg">
+            </a>  </div>
+        </div>
+    </div>
+
+    <!-- 3rd body -->
+   
+    <div class="thirdBody">
+        <div style="width: 40%; margin-top: 40px; margin-left: 40px;">
+            <h1 class="h3">One membership, many benefits</h1>
+            <p class="P" style="font-family: sans-serif; font-size: 19px; line-height: 30px; width: 500px; letter-spacing: 1px;">Your Prime membership now also includes ad-free music along with unlimited free,fast delivery on eligible items, exclusive access to deals & more.</p>  
+            <button id="Started" class="Started">Get Started</button>
+        </div>
+        <img style="width: 800px; height: 480px;" src="thridBodyImg.jpg" />
+        
+     </div>
+
+        <!-- 4th body -->
+        <div id="main">
+            <div class="child1">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_Template_Image_Left._SX1440_CR0,0,865,675_QL80_AC_FP_.jpg" width="100%" height="100%" />
+            </div>
+            <div class="child2">
+                <h1 class="h4" style="font-family: sans-serif;">Even better with Fire TV Stick</h1>
+                <p class="p3">The biggest movies and TV shows are always better on a big screen. Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press the voice button on the remote and say the name of the title you want to watch to find it in seconds.</p>
+                <button id="button1" class="button2">Get started</button>
+            </div>
+    </div>
+
+    <!-- 5th body -->
+    
+    <div id="container1">
+        <div class="inner">
+            <h2 class="h5">Family Friendly</h2>
+            <p class="p4">With easy to use Parental Controls and a dedicated kids page, enjoy secure, ad-free kids entertainment. Kids can enjoy popular TV shows like Peppa Pig, Powerpuff Girls, and Chhota Bheem.</p>
+            <input id="submit" type="submit" name="Get Started" value="Get Started"/>
+        </div>
+        <div class="inner">
+           <img class="img" src="last.jpeg" />
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <img class="footerLogo" src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png" alt="prime_video_footer_logo">
+        <div class="footerLinksAndText">
+            <a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890">Terms and Privacy Notice</a>
+            <a href="signin.html">Send us feedback</a>
+            <a href="https://www.amazon.com/gp/help/customer/display.html">Help</a>
+            <span>© 1996-2022, Amazon.com, Inc. or its affiliates</span>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    //  document.querySelector("#button").addEventListener("click",signIn)
+     document.querySelector("#Started").addEventListener("click",signIn)
+     document.querySelector("#button1").addEventListener("click",signIn)
+     document.querySelector("#submit").addEventListener("click",signIn)
+
+function signIn(){
+  window.location.href="signIn.html"
+}
+</script>

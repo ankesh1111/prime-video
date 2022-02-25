@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- importng opens sans starts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=PT+Sans+Caption&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- inporting open sans ends -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* top section starts */
+        .topSection{
+            display: flex;
+            width: 101.2%;
+            height: 200px;
+            margin: auto;
+            background-color: #222222;
+            margin-top: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+            justify-content: space-between;
+            padding-right: 5px;
+            box-sizing: border-box;
+        }
+        .leftSideItems {
+            margin-left: 220px;
+            margin-top: 30px;
+        }
+        .primeImage {
+            height: 48px;
+            width: 75px;
+        }
+        .rightSideItems {
+            height: 200px;
+        }
+        .promotion {
+            color:#9ea095;
+            margin-top: 5px;
+            font-size: 21px;
+            margin-bottom: 14px;
+        }
+        .availability {
+            color: white;
+            margin-top: -17px;
+            font-size: large;
+            font-size: 30px;
+        }
+        .tealColorBox{
+            display: flex;
+            border: 2px solid #1196ab;
+            margin: auto;
+            width: 70%;
+            margin-top: 24px;
+
+            padding-left: 15px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-right: 15px;
+            box-sizing: border-box;
+
+            /* to increase left side width of the border */
+            border-left-width: 12px;
+
+            margin-bottom: 40px;
+        }
+        .iIconTealImg {
+            width: 21px;
+            height: 21px;
+            margin-top: 10px;
+            margin-right: 7px;
+        }
+        .textUnderFirstBox {
+            font-size: 14.5px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* top section ends */
+
+
+
+
+        .bottomHalfPart {
+            
+            margin: auto;
+            width: 70%;
+        }
+        .bottomHalfPart > p {
+            font-size: 22px;
+            line-height: 2px;
+        }
+        .morePaymentOption {   /*change here */
+            height: auto;
+            border: 1px solid rgb(209, 209, 209);
+            box-sizing: border-box;
+            padding: 14px 18px;
+        }
+        .morePaymentOption > p {
+            line-height: 0px;
+            font-size: 18px;
+        }
+        .containRadioButton {
+            display: flex;
+            box-sizing: border-box;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
+        .nextToRadioButton {
+            height: 100%;
+            width: 100%;
+            
+            margin-left: 10px;
+            /* to decrease the height b/w hr and next to radio button div */
+            margin-top: -15px;
+        }
+        .nextToRadioButton > p {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .smallLineNextToIIcon {
+            font-size: 12px;
+            color: #8a7e69;
+            align-items: center;
+            margin-top: 2px;
+            margin-left: 4px;
+        }
+        .divisionTagForButton {
+            height: 150px;
+            width: 260px;
+            
+            margin-top: 40px;
+
+            /* to fix the button division tag at the buttom right corner */
+            margin-inline-start: auto;
+        }
+        .continueButton {
+            height: 50px;
+            width: 100%;
+            font-size: 18px;
+            color: #b9bbba;
+            background-color: #c8e3ed;
+            border: transparent;
+        }
+        .textBelowButton {
+            color: #7d8183;
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+        }
+        .shadow {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+        
+
+
+
+
+
+
+
+        .footer {
+            height: 117px;
+            background-color: #212121;
+
+            /* to make the header covers the whole width of the screen starts*/
+            margin-bottom: 20px;
+            margin-left: -9px;
+            margin-right: -8px;
+            /* to make the header covers the whole width of the screen ends*/
+
+            padding-top: 24px;
+            box-sizing: border-box;
+        }
+        .footerLogo {
+            display: block;
+            margin: auto;
+        }
+        .footerLinksAndText {
+            display: block;
+            text-align: center;
+            font-size: 15px;
+        }
+        .footerLinksAndText > a {
+            color: #155c85;
+            /* to remove underline behavior of anchor tag */
+            text-decoration: none;
+            margin-right: 4px;
+        }
+        .footerLinksAndText > span {
+            color: #828082;
+        }
+        .inputFieldDivision {
+            padding-bottom: 18px;
+            width: 100%;
+        }
+        .confirmYourDetails {
+            width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- top section starts -->
+    <div class="topSection">
+            <div class="leftSideItems">
+                <img  class="primeImage" src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/logo/prime_negative-v1._CB485946247_.png" alt="Prime">
+                <div style="margin-top: 7px;"></div>
+                <p class="promotion">Watch now, cancel anytime</p>
+                <p class="availability">Start your 30-day free trial</p>
+            </div>
+            <img  class="rightSideItems" src="moviesImages.jpg" alt="Prime">
+        </div>
+    </div>
+    <div class="tealColorBox">
+        <img class="iIconTealImg" src="iIconTeal.png" alt="iIcon_teal">
+        <p class="textUnderFirstBox">A Rs.2 refundable transaction is required to verify your 
+            card. After the 30-day free trial, your Prime membership will auto-renew with a charge of 
+            <span style="font-weight: 100;">₹</span>
+            1,499 a year unless canceled. Cards issued 
+            outside India can't be used to purchase Prime memberships.
+        </p>
+    </div>
+    <!-- top section ends -->
+
+
+
+    <div class="bottomHalfPart">
+
+        <div class="confirmYourDetails"></div>
+        <p>Select a payment method</p>
+        <div class="morePaymentOption">
+
+            <p>More payment options</p>
+            <hr style="border:1px solid rgb(209, 209, 209); margin-bottom: 4px;">
+            <div class="containRadioButton">
+
+                <input id="radioCheck" type="radio" />
+                <div class="nextToRadioButton">
+
+                    <p>Add Debit/Credit/ATM card</p>
+                    
+                    <div style="display: flex; margin-top: -10px;">
+                        <img id="iIcon" src="iIcon.jpg" alt="i_icon" />
+                        <span class="smallLineNextToIIcon">Select credit and debit cards supported.</span>
+                        <a style="font-size: 15px; text-decoration: none; color: #737cca;" href="">Learn more</a>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <span style="font-size: 15px; color: #8a7e69;">You can save your cards as per new RBI guidelines.</span> 
+                        <a style="font-size: 15px;color: #737cca; text-decoration:none;" href="">Learn more</a>
+                    </div>
+
+                    <img id="debitCards" src="debitCards.jpg" alt="debit_cards" />
+
+                    <div class="inputFieldDivision"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="divisionTagForButton">
+            <button onclick="btn()" class="continueButton">Continue</button>
+            <hr style="border: 1px solid rgb(223, 223, 223);">
+            <p class="textBelowButton">Skip the free trial and buy a Prime membership without auto-renew. (All electronic payment methods eligible)</p>
+        </div>
+
+    </div>
+
+    <!-- footer starts -->
+    <div class="footer">
+        <img class="footerLogo" src="primeVideoFooterLogo.jpg" alt="prime_video_footer_logo">
+        <div class="footerLinksAndText">
+            <a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890">Terms and Privacy Notice</a>
+            <a href="">Send us feedback</a>
+            <a href="https://www.amazon.com/gp/help/customer/display.html">Help</a>
+            <span>© 1996-2022, Amazon.com, Inc. or its affiliates</span>
+        </div>
+    </div>
+    <!-- footer ends -->
+</body>
+</html>
+
+
+
+
+<script>
+    var count = 0;
+    var nameOnCardInput,cardNumberInput,phoneInput,zipInput,addressLine1Input,addressLine2Input,cityInput,stateInput;
+
+    document.querySelector("#radioCheck").addEventListener("click",function() {
+        var br = document.createElement("br");
+        
+        var name = document.createElement("input");
+        name.style.height = "24px";
+        name.style.width = "113px";
+        name.style.marginRight = "10px"
+        name.style.fontSize = "18px";
+        name.setAttribute("id","nameOnCard")
+
+        var cardNumber = document.createElement("input");
+        cardNumber.style.height = "24px";
+        cardNumber.style.width = "175px";
+        cardNumber.style.marginRight = "15px"
+        cardNumber.style.fontSize = "18px";
+        cardNumber.setAttribute("id","cardNumber")
+
+        var expDate = document.createElement("select");
+        var opt1 = document.createElement("option");
+        var opt2 = document.createElement("option");
+        var opt3 = document.createElement("option");
+        var opt4 = document.createElement("option");
+        var opt5 = document.createElement("option");
+        opt1.innerText = "01";
+        opt2.innerText = "02";
+        opt3.innerText = "03";
+        opt4.innerText = "04";
+        opt5.innerText = "05";
+        opt1.value = "01";
+        opt2.value = "02";
+        opt3.value = "03";
+        opt4.value = "04";
+        opt5.value = "05";
+        expDate.append(opt1,opt2,opt3,opt4,opt5);
+
+        expDate.style.height = "29px";
+        expDate.style.width = "52px";
+        expDate.style.backgroundColor = "#f0f2f2";
+        expDate.style.border = "transparent";   
+        expDate.style.marginRight = "5px";
+        expDate.style.borderRadius = "5px";
+        expDate.style.textAlign = "center";
+        expDate.setAttribute("class","shadow");
+        
+
+
+
+
+        var expDateYear = document.createElement("select");
+        var opt1 = document.createElement("option");
+        var opt2 = document.createElement("option");
+        var opt3 = document.createElement("option");
+        var opt4 = document.createElement("option");
+        var opt5 = document.createElement("option");
+        opt1.innerText = "2022";
+        opt2.innerText = "2023";
+        opt3.innerText = "2024";
+        opt4.innerText = "2025";
+        opt5.innerText = "2026";
+        opt1.value = "2022";
+        opt2.value = "2023";
+        opt3.value = "2024";
+        opt4.value = "2025";
+        opt5.value = "2026";
+        expDateYear.append(opt1,opt2,opt3,opt4,opt5);
+
+        expDateYear.style.height = "29px";
+        expDateYear.style.width = "67px";
+        expDateYear.style.backgroundColor = "#f0f2f2";
+        expDateYear.style.marginRight = "10px";
+        expDateYear.style.border = "transparent";
+        expDateYear.style.borderRadius = "5px";
+        expDateYear.style.textAlign = "center";
+        expDateYear.setAttribute("class","shadow")
+
+
+
+
+        var btn = document.createElement("button");
+        btn.innerText = "Add your card";
+        btn.style.height = "29px";
+        btn.style.color = "white";
+        btn.style.backgroundColor = "#0f79af";
+        btn.style.border = "transparent";
+        btn.style.borderRadius = "5px";
+        btn.setAttribute("onClick","showAddressFields()");
+
+        count++;
+        if(count==1) {
+            var nameHeading = document.createElement("span");
+            var cardNumberHeading = document.createElement("span");
+            var expDateHeading = document.createElement("span");
+
+            nameHeading.innerText = "Name on card";
+            nameHeading.style.fontSize = "15px";
+            nameHeading.style.marginRight = "38px";
+            nameHeading.style.fontWeight = "600"
+
+            cardNumberHeading.innerText = "Card number";
+            cardNumberHeading.style.fontSize = "15px";
+            cardNumberHeading.style.marginRight = "112px"
+            cardNumberHeading.style.fontWeight = "600"
+
+            expDateHeading.innerText = "Expiration date";
+            expDateHeading.style.fontSize = "15px";
+            expDateHeading.style.fontWeight = "600"
+
+            document.querySelector(".inputFieldDivision").append(br,nameHeading,cardNumberHeading,expDateHeading);
+            document.querySelector(".inputFieldDivision").append(br,name,cardNumber,expDate,expDateYear,btn);
+            document.querySelector(".containRadioButton").style.backgroundColor = "#eff0f3";
+
+            document.querySelector("#iIcon").setAttribute("src","iIconGrey.jpg");
+            document.querySelector("#debitCards").setAttribute("src","debitCardsGrey.jpg");        
+
+            document.querySelector(".containRadioButton").style.height = "auto";    
+        }
+    });
+
+    function showAddressFields() {
+        nameOnCardInput = document.querySelector("#nameOnCard").value;
+        cardNumberInput = document.querySelector("#cardNumber").value;
+        
+
+        document.querySelector(".inputFieldDivision > span").remove()
+        document.querySelector(".inputFieldDivision > span").remove()
+        document.querySelector(".inputFieldDivision > span").remove()
+        document.querySelector(".inputFieldDivision > input").remove()
+        document.querySelector(".inputFieldDivision > input").remove()
+        document.querySelector(".inputFieldDivision > select").remove()
+        document.querySelector(".inputFieldDivision > select").remove()
+        document.querySelector(".inputFieldDivision > button").remove()
+
+        var form = document.createElement("form");
+
+        var br = document.createElement("br");
+
+        var label1 = document.createElement("label");
+        label1.innerText = "Full name";
+        label1.style.display = "block"
+        label1.style.fontWeight = "600";
+        label1.style.fontSize = "14px";
+        var name = document.createElement("input");
+        name.style.marginBottom = "13px"
+        name.style.height = "24px";
+        name.style.width = "50%";
+
+        var label2 = document.createElement("label");
+        label2.innerText = "Phone number";
+        label2.style.display = "block"
+        label2.style.fontWeight = "600";
+        label2.style.fontSize = "14px";
+        var phone = document.createElement("input");
+        phone.style.marginBottom = "13px"
+        phone.style.height = "24px";
+        phone.style.width = "50%";
+        phone.setAttribute("id","phoneInput")
+
+        var label3 = document.createElement("label");
+        label3.innerText = "ZIP code";
+        label3.style.display = "block"
+        label3.style.fontWeight = "600";
+        label3.style.fontSize = "14px";
+        var zipCode = document.createElement("input");
+        zipCode.style.marginBottom = "13px"
+        zipCode.style.height = "24px";
+        zipCode.style.width = "50%";
+        zipCode.setAttribute("id","zipInput")
+
+        var label4 = document.createElement("label");
+        label4.innerText = "Address Line 1";
+        label4.style.display = "block"
+        label4.style.fontWeight = "600";
+        label4.style.fontSize = "14px";
+        var addressLine1 = document.createElement("input");
+        addressLine1.style.marginBottom = "13px"
+        addressLine1.style.height = "24px";
+        addressLine1.style.width = "50%";
+        addressLine1.setAttribute("id","addressLine1Input")
+
+        var label5 = document.createElement("label");
+        label5.innerText = "Line 2";
+        label5.style.display = "block"
+        label5.style.fontWeight = "600";
+        label5.style.fontSize = "14px";
+        var addressLine2 = document.createElement("input");
+        addressLine2.style.marginBottom = "13px"
+        addressLine2.style.height = "24px";
+        addressLine2.style.width = "50%";
+        addressLine2.setAttribute("id","addressLine2Input")
+
+        var label6 = document.createElement("label");
+        label6.innerText = "City";
+        label6.style.display = "block"
+        label6.style.fontWeight = "600";
+        label6.style.fontSize = "14px";
+        var city = document.createElement("input");
+        city.style.marginBottom = "13px"
+        city.style.height = "24px";
+        city.style.width = "50%";
+        city.setAttribute("id","cityInput")
+
+        var label7 = document.createElement("label");
+        label7.innerText = "State";
+        label7.style.display = "block"
+        label7.style.fontWeight = "600";
+        label7.style.fontSize = "14px";
+        var state = document.createElement("input");
+        state.style.marginBottom = "13px"
+        state.style.height = "24px";
+        state.style.width = "50%";
+        state.setAttribute("id","stateInput")
+
+        var addressBtn = document.createElement("button");
+        addressBtn.innerText = "Use this address";
+        addressBtn.style.height = "29px";
+        addressBtn.style.color = "white";
+        addressBtn.style.backgroundColor = "#0f79af";
+        addressBtn.style.border = "transparent";
+        addressBtn.style.borderRadius = "5px";
+        addressBtn.style.padding = "0px 6px";
+        addressBtn.style.display = "block"
+        addressBtn.style.marginInlineStart = "auto"
+        addressBtn.style.marginRight = "25px"
+        addressBtn.style.marginTop = "18px"
+        addressBtn.setAttribute("onclick","confirmDetails(event)");
+
+        form.append(label1,name,label2,phone,label3,zipCode,label4,addressLine1,label5,addressLine2,label6,city,label7,state,addressBtn);
+
+        document.querySelector(".inputFieldDivision").append(form);
+    }
+
+    function confirmDetails(event) {
+        event.preventDefault();
+
+        phoneInput = document.querySelector("#phoneInput").value;
+        zipInput = document.querySelector("#zipInput").value;
+        addressLine1Input = document.querySelector("#addressLine1Input").value;
+        addressLine2Input = document.querySelector("#addressLine2Input").value;
+        cityInput = document.querySelector("#cityInput").value;
+        stateInput = document.querySelector("#stateInput").value;
+        console.log(phoneInput,zipInput,addressLine1Input,addressLine2Input,cityInput,stateInput);
+
+        // deleting previous content starts
+        document.querySelector(".tealColorBox").remove();
+        document.querySelector(".bottomHalfPart > p").remove();
+        document.querySelector(".bottomHalfPart > .morePaymentOption").remove();
+        // deleting previous content ends
+
+        var h3 = document.createElement("h3");
+        h3.innerText = "Confirm your details";
+        h3.style.fontSize = "22px";
+
+        // main div which contain four divs
+        var div = document.createElement("div");
+        div.style.width = "100%";
+        div.style.border = "1px solid lightgrey"
+
+
+        var div1 = document.createElement("div");
+        div1.style.display = "flex";
+        div1.style.border = "1px solid lightgrey";
+        var leftPara = document.createElement("p");
+        leftPara.innerText = "Plan";
+        leftPara.style.fontWeight = "600";
+        leftPara.style.width = "270px";
+        leftPara.style.margin = "0px 0px"; //try
+        leftPara.style.backgroundColor = "#eff0f3";
+        leftPara.style.padding = "10px 10px";
+        leftPara.style.boxSizing = "borderBox";
+        leftPara.style.height = "100px"
+        leftPara.style.fontSize = "15px"
+        var rightPara = document.createElement("div");
+        rightPara.style.boxSizing = "borderBox";
+        rightPara.style.margin = "0px 0px";
+        rightPara.style.padding = "10px 10px"
+        rightPara.style.marginRight = "50px";
+        rightPara.style.width = "81%"; // imp
+        var rightParaHeading = document.createElement("p");
+        rightParaHeading.style.fontSize = "15px";
+        rightParaHeading.innerText = "Prime";
+        rightParaHeading.style.fontWeight = "600";
+        rightParaHeading.style.margin = "0px 0px";
+        var rightParaContent = document.createElement("p");
+        rightParaContent.innerHTML = "Enjoy unlimited streaming of thousands of movies and TV shows plus FREE One-Day Delivery on millions of items.<br>(Rs.179/month after trial)";
+        rightParaContent.style.margin = "0px 0px";
+        rightParaContent.style.fontSize = "15px";
+        var btn = document.createElement("button");
+        btn.innerText = "Change";
+        btn.style.width = "190px";
+        btn.style.height = "40px";
+        btn.style.margin = "10px 10px";
+        rightPara.append(rightParaHeading,rightParaContent);
+        div1.append(leftPara,rightPara,btn);
+
+
+        var div2 = document.createElement("div");
+        div2.style.display = "flex";
+        div2.style.border = "1px solid lightgray";
+        var leftPara = document.createElement("p");
+        leftPara.style.fontSize = "15px"
+        leftPara.innerText = "Email";
+        leftPara.style.fontWeight = "600";
+        leftPara.style.width = "270px";
+        leftPara.style.margin = "0px 0px"; //try
+        leftPara.style.backgroundColor = "#eff0f3";
+        leftPara.style.padding = "10px 10px";
+        leftPara.style.boxSizing = "borderBox";
+        leftPara.style.height = "40px"
+        var rightPara = document.createElement("div");
+        rightPara.style.boxSizing = "borderBox";
+        rightPara.style.margin = "0px 0px";
+        rightPara.style.padding = "10px 10px"
+        rightPara.style.marginRight = "50px";
+        rightPara.style.width = "106%";
+        var rightParaHeading = document.createElement("p");
+        rightParaHeading.style.fontSize = "15px";
+        rightParaHeading.innerText = "Prime";
+        rightParaHeading.style.fontWeight = "600";
+        rightParaHeading.style.margin = "0px 0px";
+        var rightParaContent = document.createElement("p");
+        rightParaContent.innerHTML = JSON.parse(localStorage.getItem("dataOfAcc"))[0]["email"];
+        rightParaContent.style.margin = "0px 0px";
+        rightParaContent.style.fontSize = "15px";
+        var btn = document.createElement("button");
+        btn.innerText = "Change";
+        btn.style.width = "190px";
+        btn.style.height = "40px";
+        btn.style.margin = "10px 10px";
+        rightPara.append(rightParaContent);
+        div2.append(leftPara,rightPara);
+
+        var div3 = document.createElement("div");
+        div3.style.display = "flex";
+        div3.style.border = "1px solid lightgrey";
+        var leftPara = document.createElement("p");
+        leftPara.style.fontSize = "15px"
+        leftPara.innerText = "Payment method";
+        leftPara.style.fontWeight = "600";
+        leftPara.style.width = "270px";
+        leftPara.style.margin = "0px 0px"; //try
+        leftPara.style.backgroundColor = "#eff0f3";
+        leftPara.style.padding = "10px 10px";
+        leftPara.style.boxSizing = "borderBox";
+        leftPara.style.height = "80px"
+        var rightPara = document.createElement("div");
+        rightPara.style.boxSizing = "borderBox";
+        rightPara.style.margin = "0px 0px";
+        rightPara.style.padding = "10px 10px"
+        rightPara.style.marginRight = "50px";
+        rightPara.style.width = "81%";
+        var rightParaHeading = document.createElement("p");
+        rightParaHeading.style.fontSize = "15px";
+        rightParaHeading.innerText = "Prime";
+        rightParaHeading.style.fontWeight = "600";
+        rightParaHeading.style.margin = "0px 0px";
+        var rightParaContent = document.createElement("p");
+        rightParaContent.innerHTML = "Debit/Credit/ATM card"+"<br>"+"Card number:"+cardNumberInput+"<br>"+nameOnCardInput;
+        rightParaContent.style.margin = "0px 0px";
+        rightParaContent.style.fontSize = "15px";
+        var btn = document.createElement("button");
+        btn.innerText = "Change";
+        btn.style.width = "190px";
+        btn.style.height = "40px";
+        btn.style.margin = "10px 10px";
+        rightPara.append(rightParaContent);
+        div3.append(leftPara,rightPara,btn);
+
+        var div4 = document.createElement("div");
+        div4.style.display = "flex";
+        div4.style.border = "1px solid lightgrey";
+        var leftPara = document.createElement("p");
+        leftPara.style.fontSize = "15px"
+        leftPara.innerText = "Billing address";
+        leftPara.style.fontWeight = "600";
+        leftPara.style.width = "270px";
+        leftPara.style.margin = "0px 0px"; //try
+        leftPara.style.backgroundColor = "#eff0f3";
+        leftPara.style.padding = "10px 10px";
+        leftPara.style.boxSizing = "borderBox";
+        leftPara.style.height = "130px"
+        var rightPara = document.createElement("div");
+        rightPara.style.boxSizing = "borderBox";
+        rightPara.style.margin = "0px 0px";
+        rightPara.style.padding = "10px 10px"
+        rightPara.style.marginRight = "50px";
+        rightPara.style.width = "81%";
+        var rightParaHeading = document.createElement("p");
+        rightParaHeading.style.fontSize = "15px";
+        rightParaHeading.innerText = "Prime";
+        rightParaHeading.style.fontWeight = "600";
+        rightParaHeading.style.margin = "0px 0px";
+        var rightParaContent = document.createElement("p");
+        rightParaContent.innerHTML = addressLine1Input + "<br>" + addressLine2Input + "<br>" + cityInput + "<br>" + stateInput + "<br>" + zipInput + "<br>" + phoneInput;
+        rightParaContent.style.margin = "0px 0px";
+        rightParaContent.style.fontSize = "15px";
+        var btn = document.createElement("button");
+        btn.innerText = "Change";
+        btn.style.width = "190px";
+        btn.style.height = "40px";
+        btn.style.margin = "10px 10px";
+        rightPara.append(rightParaContent);
+        div4.append(leftPara,rightPara,btn);
+
+        div.append(div1,div2,div3,div4);
+        document.querySelector(".confirmYourDetails").append(h3,div);
+
+        document.querySelector(".continueButton").style.backgroundColor = "#007ed2";
+        document.querySelector(".continueButton").style.color = "white";
+        document.querySelector(".continueButton").addEventListener("click", function() {
+            window.location.href = "mainVideoHomePage.html";
+        })
+
+        var para = document.createElement("div");
+        para.innerHTML = "By signing up, you acknowledge that you are now liable to the Amazon Prime Terms and Conditions and authorize us to charge your preferred card or another available to your bank account after 30-day fre trial. <b>Your Prime membership continues until cancelled. If you don not wish to continue for Rs. 179/month plus any applicable taxes, you may cancel anytime by visiting Your Account and adjusting your memebership settings.</b>"
+        para.style.height = "100px"
+        para.style.textAlign = "center"
+        para.style.fontSize = "13px"
+        document.querySelector(".bottomHalfPart").append(para);
+    }
+    
+    
+</script>
