@@ -423,7 +423,7 @@
             <img src="globeIcon.jpg" alt="globe_icon" class="globeIcon">
             <span class="langSelect">EN</span>
             <img class="dropDownTriangleIcon" src="dropDownTriangleArrow.jpg" alt="drop_down_triangle_arrow" />
-            <a href="signin.html" class="signIn">Sign In</a>
+            <span id="userNameDisplayHere" style="color: #c3bfc6; margin-top: 4px; margin-left: 10px; font-size: 18px;">Sign In</span>
         </div>
     </div>
 
@@ -567,10 +567,13 @@
 </html>
 
 <script>
-     document.querySelector("#button").addEventListener("click",signIn)
-     document.querySelector("#Started").addEventListener("click",signIn)
-     document.querySelector("#button1").addEventListener("click",signIn)
-     document.querySelector("#submit").addEventListener("click",signIn)
+    var usersName = JSON.parse(localStorage.getItem("dataOfAcc"))[0]["name"];
+    document.querySelector("#userNameDisplayHere").innerText = usersName;
+        
+        document.querySelector("#button").addEventListener("click",signIn)
+        document.querySelector("#Started").addEventListener("click",signIn)
+        document.querySelector("#button1").addEventListener("click",signIn)
+        document.querySelector("#submit").addEventListener("click",signIn)
 
 function signIn(){
   location.href="signin.html"
@@ -578,4 +581,5 @@ function signIn(){
 function btn() {
     window.location.href = "paymentGateway.html";
 }
+
 </script>
