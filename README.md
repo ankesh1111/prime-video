@@ -29,7 +29,9 @@ Inc., offered as a standalone service or as part of Amazon's Prime subscription.
  ![image 6](https://user-images.githubusercontent.com/92791586/155705568-dd20fd3e-6cfd-496b-850c-744f0df4c7fa.PNG)
 7. video main page page
 ![image 7](https://user-images.githubusercontent.com/92791586/155747005-500c4cd9-c175-40de-9f26-b9e610628daf.PNG)
+
 ![image 9](https://user-images.githubusercontent.com/92791586/155752252-c9bfd295-163e-4364-aec7-ee5305813591.PNG)
+
 ![image 10](https://user-images.githubusercontent.com/92791586/155752379-50bb5cb6-23d9-44a9-83d4-d11aef8b0e43.PNG)
 
 
